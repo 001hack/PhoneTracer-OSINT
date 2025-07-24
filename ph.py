@@ -4,7 +4,7 @@ import requests
 
 # Function to check if a number is spam using the NumVerify API
 def check_spam_status(phone_number):
-    api_key = ' #Replace with your NumVerify API key '   
+    api_key = "YOUR_API_KEY"  # Replace with your NumVerify API key  
     url = f"http://apilayer.net/api/validate?access_key={api_key}&number={phone_number}"
     
     response = requests.get(url)
